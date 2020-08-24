@@ -20,7 +20,8 @@ module Griddler
                 :attachments,
                 :vendor_specific,
                 :spam_report,
-                :charsets
+                :charsets,
+                :params
 
     def initialize(params)
       @params = params
@@ -78,8 +79,6 @@ module Griddler
     end
 
     private
-
-    attr_reader :params
 
     def config
       @config ||= Griddler.configuration
